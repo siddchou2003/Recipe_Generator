@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AI Recipe Generator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>AI Recipe Generator</h1>
+
+    <label for="ingredients">Enter ingredients (comma separated):</label>
+    <input type="text" id="ingredients" placeholder="e.g. chicken, garlic, tomatoes, rice" />
+
+    <label for="diet">Select dietary preference:</label>
+    <select id="diet">
+      <option value="none">None</option>
+      <option value="vegetarian">Vegetarian</option>
+      <option value="vegan">Vegan</option>
+      <option value="keto">Keto</option>
+      <option value="gluten-free">Gluten-Free</option>
+    </select>
+
+    <button onclick="generateRecipe()">Generate Recipe</button>
+
+    <div id="result"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
